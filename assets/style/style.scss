@@ -126,7 +126,7 @@ p {
          content: "";
          position: relative;
          display: inline-block;
-         background-image: url(../icons/html.svg);
+         background-image: url(../../icons/html.svg);
          background-size: cover;
          height: 30px;
          width: 30px;
@@ -135,23 +135,23 @@ p {
       }
 
       .skill-css::before {
-         background-image: url(../icons/css.svg);
+         background-image: url(../../icons/css.svg);
       }
 
       .skill-js::before {
-         background-image: url(../icons/javascript.svg);
+         background-image: url(../../icons/javascript.svg);
       }
 
       .skill-scss::before {
-         background-image: url(../icons/sass.svg);
+         background-image: url(../../icons/sass.svg);
       }
 
       .skill-git::before {
-         background-image: url(../icons/github.svg);
+         background-image: url(../../icons/github.svg);
       }
 
       .skill-figma::before {
-         background-image: url(../icons/figma.svg);
+         background-image: url(../../icons/figma.svg);
       }
    }
 
@@ -207,7 +207,7 @@ p {
          width: 200px;
          height: 250px;
          background-size: cover;
-         background-image: url(../images/portfolio.jpg);
+         background-image: url(../../images/portfolio.jpg);
 
       }
 
@@ -219,7 +219,7 @@ p {
          width: 200px;
          height: 250px;
          background-size: cover;
-         background-image: url(../images/galery.jpg);
+         background-image: url(../../images/galery.jpg);
       }
 
       .memory-game {
@@ -229,7 +229,7 @@ p {
          width: 200px;
          height: 250px;
          background-size: cover;
-         background-image: url(../images/memory-game.jpg);
+         background-image: url(../../images/memory-game.jpg);
       }
 
    }
