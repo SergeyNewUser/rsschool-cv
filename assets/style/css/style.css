@@ -224,19 +224,87 @@ template {
    v2.0-modified | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -251,8 +319,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -260,16 +337,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -584,4 +665,244 @@ textarea {
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
+}
+
+body {
+  background-color: #111;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  background-color: #fecb01;
+  color: #202026;
+  text-align: right;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+  min-height: 60px;
+}
+
+h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #111;
+}
+
+span {
+  color: #fecb01;
+}
+
+p {
+  line-height: 150%;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  color: white;
+  background-color: #202026;
+}
+
+.header-container {
+  display: flex;
+  min-height: 299px;
+  font-family: cursive;
+}
+.header-container .header-menu {
+  margin-bottom: 40px;
+}
+.header-container .header-avatar {
+  width: 300px;
+}
+.header-container .header-content {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header-container .header-content .header-menu {
+  display: flex;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 800;
+  align-items: center;
+  background-color: #fecb01;
+  justify-content: flex-end;
+  text-transform: uppercase;
+}
+.header-container .header-content .header-menu li {
+  display: inline-block;
+}
+.header-container .header-content .header-menu a {
+  color: #202026;
+}
+
+.main-container {
+  display: flex;
+  font-size: 18px;
+  text-align: justify;
+}
+.main-container .aside-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.main-container .aside-container h3 {
+  padding-top: 1em;
+  color: white;
+  font-weight: 600;
+  border-bottom: 2px solid #fecb01;
+  margin-bottom: 0.5em;
+}
+.main-container .aside-container p {
+  padding: 0px 20px 10px 0px;
+}
+.main-container .aside-container li {
+  color: #fecb01;
+  padding: 0.5em 0;
+}
+.main-container .aside-container a {
+  color: #fecb01;
+}
+.main-container .aside-container .skill-html::before,
+.main-container .aside-container .skill-css::before,
+.main-container .aside-container .skill-js::before,
+.main-container .aside-container .skill-scss::before,
+.main-container .aside-container .skill-git::before,
+.main-container .aside-container .skill-figma::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background-image: url(/assets/icons/html.svg);
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.main-container .aside-container .skill-css::before {
+  background-image: url(/assets/icons/css.svg);
+}
+.main-container .aside-container .skill-js::before {
+  background-image: url(/assets/icons/javascript.svg);
+}
+.main-container .aside-container .skill-scss::before {
+  background-image: url(/assets/icons/sass.svg);
+}
+.main-container .aside-container .skill-git::before {
+  background-image: url(/assets/icons/github.svg);
+}
+.main-container .aside-container .skill-figma::before {
+  background-image: url(/assets/icons/figma.svg);
+}
+.main-container .main-container {
+  width: 100%;
+  min-height: 100%;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: azure;
+  color: #111;
+  font-family: sans-serif;
+  line-height: 150%;
+}
+.main-container .main-container li {
+  list-style: circle;
+  margin-left: 20px;
+}
+.main-container .main-container p {
+  text-indent: 1.5em;
+  margin-top: 0;
+}
+.main-container .main-container h3 {
+  text-align: right;
+  padding-top: 1em;
+  color: #202026;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+.main-container .main-container h4 {
+  text-align: left;
+  padding-top: 1em;
+  color: #202026;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.main-container .main-container .projects-content {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .main-container .portfolio {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 250px;
+  background-size: cover;
+  background-image: url(/assets/images/portfolio.jpg);
+}
+.main-container .main-container .galery {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 250px;
+  background-size: cover;
+  background-image: url(/assets/images/galery.jpg);
+}
+.main-container .main-container .memory-game {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 250px;
+  background-size: cover;
+  background-image: url(/assets/images/memory-game.jpg);
+}
+
+.footer-container {
+  display: flex;
+  height: 120px;
+}
+.footer-container h3 {
+  padding-top: 1em;
+  color: white;
+  font-weight: 600;
+  border-bottom: 2px solid #fecb01;
+  margin-bottom: 0.5em;
+}
+.footer-container li {
+  padding: 0px 20px 10px 0px;
+}
+.footer-container .footer-contacts {
+  width: 300px;
+  padding-left: 20px;
+}
+.footer-container .footer-content {
+  display: flex;
+  width: 70%;
+}
+.footer-container .footer-content span {
+  color: #202026;
+  vertical-align: bottom;
+  padding-left: 100px;
+}
+.footer-container .footer-content .footer-logo {
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
+  background-color: #fecb01;
+}
+.footer-container .footer-content .footer-github {
+  background-size: cover;
 }
