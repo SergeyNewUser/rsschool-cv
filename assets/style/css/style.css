@@ -743,6 +743,12 @@ p {
 }
 .header-container .header-content .header-menu a {
   color: #202026;
+  transition: all 0.5s;
+}
+.header-container .header-content .header-menu a:hover {
+  color: red;
+  transition: all 0.5s;
+  border-bottom: 2px solid red;
 }
 
 .main-container {
@@ -850,6 +856,12 @@ p {
   height: 250px;
   background-size: cover;
   background-image: url(../../images/portfolio.jpg);
+  transition: all 0.5s;
+}
+.main-container .main-container .portfolio:hover,
+.main-container .main-container .galery:hover,
+.main-container .main-container .memory-game:hover {
+  transform: scale(1.1);
 }
 .main-container .main-container .galery {
   border-radius: 20px;
@@ -859,6 +871,7 @@ p {
   height: 250px;
   background-size: cover;
   background-image: url(../../images/galery.jpg);
+  transition: all 0.5s;
 }
 .main-container .main-container .memory-game {
   border-radius: 20px;
@@ -868,6 +881,7 @@ p {
   height: 250px;
   background-size: cover;
   background-image: url(../../images/memory-game.jpg);
+  transition: all 0.5s;
 }
 
 .footer-container {

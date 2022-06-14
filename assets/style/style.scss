@@ -80,7 +80,17 @@ p {
 
          a {
             color: #202026;
+            transition: all .5s;
          }
+
+         a:hover {
+            color: red;
+            transition: all .5s;
+            border-bottom: 2px solid red;
+
+         }
+
+
       }
    }
 }
@@ -208,7 +218,13 @@ p {
          height: 250px;
          background-size: cover;
          background-image: url(../../images/portfolio.jpg);
+         transition: all .5s;
+      }
 
+      .portfolio:hover,
+      .galery:hover,
+      .memory-game:hover {
+         transform: scale(1.1);
       }
 
 
@@ -220,6 +236,7 @@ p {
          height: 250px;
          background-size: cover;
          background-image: url(../../images/galery.jpg);
+         transition: all .5s;
       }
 
       .memory-game {
@@ -230,6 +247,7 @@ p {
          height: 250px;
          background-size: cover;
          background-image: url(../../images/memory-game.jpg);
+         transition: all .5s;
       }
 
    }
