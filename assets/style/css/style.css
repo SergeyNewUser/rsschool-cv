@@ -782,7 +782,7 @@ p {
   content: "";
   position: relative;
   display: inline-block;
-  background-image: url(/assets/icons/html.svg);
+  background-image: url(../../../assets/icons/html.svg);
   background-size: cover;
   height: 30px;
   width: 30px;
@@ -790,19 +790,19 @@ p {
   vertical-align: middle;
 }
 .main-container .aside-container .skill-css::before {
-  background-image: url(/assets/icons/css.svg);
+  background-image: url(../../../assets/icons/css.svg);
 }
 .main-container .aside-container .skill-js::before {
-  background-image: url(/assets/icons/javascript.svg);
+  background-image: url(../../../assets/icons/javascript.svg);
 }
 .main-container .aside-container .skill-scss::before {
-  background-image: url(/assets/icons/sass.svg);
+  background-image: url(../../../assets/icons/sass.svg);
 }
 .main-container .aside-container .skill-git::before {
-  background-image: url(/assets/icons/github.svg);
+  background-image: url(../../../assets/icons/github.svg);
 }
 .main-container .aside-container .skill-figma::before {
-  background-image: url(/assets/icons/figma.svg);
+  background-image: url(../../../assets/icons/figma.svg);
 }
 .main-container .main-container {
   width: 100%;
@@ -849,7 +849,7 @@ p {
   width: 200px;
   height: 250px;
   background-size: cover;
-  background-image: url(/assets/images/portfolio.jpg);
+  background-image: url(../../../assets/images/portfolio.jpg);
 }
 .main-container .main-container .galery {
   border-radius: 20px;
@@ -858,7 +858,7 @@ p {
   width: 200px;
   height: 250px;
   background-size: cover;
-  background-image: url(/assets/images/galery.jpg);
+  background-image: url(../../../assets/images/galery.jpg);
 }
 .main-container .main-container .memory-game {
   border-radius: 20px;
@@ -867,7 +867,7 @@ p {
   width: 200px;
   height: 250px;
   background-size: cover;
-  background-image: url(/assets/images/memory-game.jpg);
+  background-image: url(../../../assets/images/memory-game.jpg);
 }
 
 .footer-container {
