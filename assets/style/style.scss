@@ -1,0 +1,281 @@
+@import "normalize";
+@import "reset";
+
+body {
+   background-color: #111;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1,
+h2 {
+   text-transform: uppercase;
+   background-color: #fecb01;
+   color: #202026;
+   text-align: right;
+}
+
+h2 {
+   font-size: 20px;
+}
+
+h1 {
+   font-size: 40px;
+   line-height: 50px;
+   min-height: 60px;
+}
+
+h3 {
+   font-size: 25px;
+   text-transform: uppercase;
+   border-bottom: 2px solid #111;
+}
+
+span {
+   color: #fecb01;
+}
+
+p {
+   line-height: 150%;
+}
+
+.wrapper {
+   width: 1000px;
+   margin: 0 auto;
+   color: white;
+   background-color: #202026;
+}
+
+.header-container {
+   display: flex;
+   min-height: 299px;
+   font-family: cursive;
+
+   .header-menu {
+      margin-bottom: 40px;
+   }
+
+   .header-avatar {
+      width: 300px;
+   }
+
+   .header-content {
+      width: 900px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .header-menu {
+         display: flex;
+         height: 40px;
+         font-size: 15px;
+         font-weight: 800;
+         align-items: center;
+         background-color: #fecb01;
+         justify-content: flex-end;
+         text-transform: uppercase;
+
+         li {
+            display: inline-block
+         }
+
+         a {
+            color: #202026;
+         }
+      }
+   }
+}
+
+.main-container {
+   display: flex;
+   font-size: 18px;
+   text-align: justify;
+
+   .aside-container {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+
+      h3 {
+         padding-top: 1em;
+         color: white;
+         font-weight: 600;
+         border-bottom: 2px solid #fecb01;
+         margin-bottom: .5em;
+      }
+
+      p {
+         padding: 0px 20px 10px 0px;
+      }
+
+      li {
+         color: #fecb01;
+         padding: .5em 0;
+      }
+
+      a {
+         color: #fecb01;
+      }
+
+      .skill-html::before,
+      .skill-css::before,
+      .skill-js::before,
+      .skill-scss::before,
+      .skill-git::before,
+      .skill-figma::before {
+         content: "";
+         position: relative;
+         display: inline-block;
+         background-image: url(../../../assets/icons/html.svg);
+         background-size: cover;
+         height: 30px;
+         width: 30px;
+         margin-right: 5px;
+         vertical-align: middle;
+      }
+
+      .skill-css::before {
+         background-image: url(../../../assets/icons/css.svg);
+      }
+
+      .skill-js::before {
+         background-image: url(../../../assets/icons/javascript.svg);
+      }
+
+      .skill-scss::before {
+         background-image: url(../../../assets/icons/sass.svg);
+      }
+
+      .skill-git::before {
+         background-image: url(../../../assets/icons/github.svg);
+      }
+
+      .skill-figma::before {
+         background-image: url(../../../assets/icons/figma.svg);
+      }
+   }
+
+   .main-container {
+      width: 100%;
+      min-height: 100%;
+      padding: 0 25px;
+      display: flex;
+      flex-direction: column;
+      background-color: azure;
+      color: #111;
+      font-family: sans-serif;
+      line-height: 150%;
+
+      li {
+         list-style: circle;
+         margin-left: 20px;
+      }
+
+      p {
+         text-indent: 1.5em;
+         margin-top: 0
+      }
+
+      h3 {
+         text-align: right;
+         padding-top: 1em;
+         color: #202026;
+         margin-bottom: .5em;
+         font-weight: 600;
+      }
+
+      h4 {
+         text-align: left;
+         padding-top: 1em;
+         color: #202026;
+         margin-bottom: .5em;
+         font-weight: 600;
+         text-transform: uppercase;
+      }
+
+      .projects-content {
+         display: flex;
+         justify-content: space-between;
+
+
+      }
+
+      .portfolio {
+         border-radius: 20px;
+         display: flex;
+         flex-direction: column;
+         width: 200px;
+         height: 250px;
+         background-size: cover;
+         background-image: url(../../../assets/images/portfolio.jpg);
+
+      }
+
+      .galery {
+         border-radius: 20px;
+         display: flex;
+         flex-direction: column;
+         width: 200px;
+         height: 250px;
+         background-size: cover;
+         background-image: url(../../../assets/images/galery.jpg);
+      }
+
+      .memory-game {
+         border-radius: 20px;
+         display: flex;
+         flex-direction: column;
+         width: 200px;
+         height: 250px;
+         background-size: cover;
+         background-image: url(../../../assets/images/memory-game.jpg);
+      }
+
+   }
+}
+
+.footer-container {
+   display: flex;
+   height: 120px;
+
+   h3 {
+      padding-top: 1em;
+      color: white;
+      font-weight: 600;
+      border-bottom: 2px solid #fecb01;
+      margin-bottom: .5em;
+   }
+
+   li {
+      padding: 0px 20px 10px 0px;
+   }
+
+   .footer-contacts {
+      width: 300px;
+      padding-left: 20px;
+   }
+
+   .footer-content {
+      display: flex;
+      width: 70%;
+
+      span {
+         color: #202026;
+         vertical-align: bottom;
+         padding-left: 100px;
+      }
+
+      .footer-logo {
+         display: flex;
+         width: 700px;
+         justify-content: space-between;
+         background-color: #fecb01;
+      }
+
+      .footer-github {
+         background-size: cover;
+
+
+      }
+   }
+}
